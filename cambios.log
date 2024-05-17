@@ -1,0 +1,52 @@
+[2024-05-16 20:21:46] [ WARN ] [BD:34] Error de Sintaxis en sentencia SQL "CREATE TABLE DOMICILIOS (ID INT AUTO_INCREMENT PRIMARY KEY, CALLE VARCHAR(100) NOT NULL, NUMERO INT NOT NULL, LOCALIDAD VARCHAR(100) NOT NULL, PROVINCIA VARCHAR(100) NOT NULL[*]"; se esperaba "DEFAULT, GENERATED, ON UPDATE, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE DOMICILIOS (ID INT AUTO_INCREMENT PRIMARY KEY, CALLE VARCHAR(100) NOT NULL, NUMERO INT NOT NULL, LOCALIDAD VARCHAR(100) NOT NULL, PROVINCIA VARCHAR(100) NOT NULL[*]"; expected "DEFAULT, GENERATED, ON UPDATE, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE DOMICILIOS (ID INT AUTO_INCREMENT PRIMARY KEY, CALLE VARCHAR(100) NOT NULL, NUMERO INT NOT NULL, LOCALIDAD VARCHAR(100) NOT NULL, PROVINCIA VARCHAR(100) NOT NULL [42001-224]
+[2024-05-16 20:21:46] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 20:21:46] [ ERROR] [PacienteDAOH2:41] Table "PACIENTES" not found (this database is empty); SQL statement:
+SELECT * FROM PACIENTES WHERE ID=? [42104-224]
+[2024-05-16 20:23:58] [ WARN ] [BD:34] Conversión de datos fallida, convirtiendo "2003 (PACIENTES: ""FECHA_INGRESO"" DATE NOT NULL)"
+Data conversion error converting "2003 (PACIENTES: ""FECHA_INGRESO"" DATE NOT NULL)"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES ('Jorgito','Pereyra','111111',2024-05-16, 1), ('German','Fraire','22222',2024-05-10,2) [22018-224]
+[2024-05-16 20:23:58] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 20:25:34] [ WARN ] [BD:34] Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES ('Jorgito','Pereyra','111111'','2024-05-16', 1), ('German','Fraire','22222','2024-05-10',2); INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay[*]')"
+Syntax error in SQL statement "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES ('Jorgito','Pereyra','111111'','2024-05-16', 1), ('German','Fraire','22222','2024-05-10',2); INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay[*]')"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES ('Jorgito','Pereyra','111111'','2024-05-16', 1), ('German','Fraire','22222','2024-05-10',2); INSERT INTO DOMICILIOS  (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES ('Siempre Viva',742,'Springfield','USA'),('Av. Uruguay',345,'Punta del Este','Uruguay') [42000-224]
+[2024-05-16 20:25:34] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 20:26:42] [ INFO ] [BD:29] tabla creada con exito
+[2024-05-16 20:26:42] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 20:26:42] [ INFO ] [DomicilioDAOH2:22] iniciando la busqueda de un domicilio con id: 2
+[2024-05-16 18:38:19] [ INFO ] [BD:29] tabla creada con exito
+[2024-05-16 18:38:19] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 18:38:19] [ INFO ] [DomicilioDAOH2:22] iniciando la busqueda de un domicilio con id: 2
+[2024-05-16 18:42:31] [ INFO ] [BD:29] tabla creada con exito
+[2024-05-16 18:42:31] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 18:42:31] [ INFO ] [DomicilioDAOH2:22] iniciando la busqueda de un domicilio con id: 2
+[2024-05-16 18:42:59] [ INFO ] [BD:29] tabla creada con exito
+[2024-05-16 18:42:59] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 18:42:59] [ INFO ] [DomicilioDAOH2:22] iniciando la busqueda de un domicilio con id: 2
+[2024-05-16 19:40:11] [ WARN ] [BD:43] La base de datos puede que ya esté siendo utilizada: "C:/Users/Evil-machine/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Evil-machine/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-16 19:40:11] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 19:40:11] [ ERROR] [PacienteDAOH2:41] La base de datos puede que ya esté siendo utilizada: "C:/Users/Evil-machine/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Evil-machine/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-16 19:40:28] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-16 19:40:28] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 19:40:28] [ INFO ] [DomicilioDAOH2:22] iniciando la busqueda de un domicilio con id: 2
+[2024-05-16 19:41:41] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-16 19:41:41] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 19:41:41] [ INFO ] [DomicilioDAOH2:22] iniciando la busqueda de un domicilio con id: 2
+[2024-05-16 20:25:52] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-16 20:25:52] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 20:25:52] [ INFO ] [DomicilioDAOH2:22] iniciando la busqueda de un domicilio con id: 2
+[2024-05-16 20:33:35] [ INFO ] [OdontologoDAOH2:42] iniciando la operacion de listado de odontologos 
+[2024-05-16 20:36:51] [ INFO ] [OdontologoDAOH2:42] iniciando la operacion de listado de odontologos 
+[2024-05-16 20:36:52] [ ERROR] [OdontologoDAOH2:63] Error al listar odontólogos: La base de datos puede que ya esté siendo utilizada: "C:/Users/Evil-machine/clinicaOdontologica.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Evil-machine/clinicaOdontologica.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-16 20:37:05] [ INFO ] [OdontologoDAOH2:42] iniciando la operacion de listado de odontologos 
+[2024-05-16 20:37:56] [ INFO ] [OdontologoDAOH2:42] iniciando la operacion de listado de odontologos 
+[2024-05-16 20:38:34] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-16 20:38:34] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 20:38:34] [ INFO ] [DomicilioDAOH2:22] iniciando la busqueda de un domicilio con id: 2
+[2024-05-16 20:54:03] [ INFO ] [BD:38] tabla creada con exito
+[2024-05-16 20:54:03] [ INFO ] [PacienteDAOH2:23] iniciando la operacion de buscado de un paciente con id : 2
+[2024-05-16 20:54:03] [ INFO ] [DomicilioDAOH2:22] iniciando la busqueda de un domicilio con id: 2
